@@ -1,0 +1,92 @@
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+.square {
+	/*the width is proportional to the parent element which is div container*/
+	width: 30%;
+	background: purple;
+	/*padding is because the sqaures are empty and padding will make the square visible*/
+	padding-bottom: 30%;
+	/*float is so every square stack to each other from the left to the right not under each other*/
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	/*the twa next properties are for other browser support*/
+	-webkit-transition: all 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
+	/*line height is how much space between each line*/
+	line-height: 1.1;
+	/*font weight normal will make h1 not bold*/
+	font-weight: normal;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 20px 0;
+	transition: background 0.6s;
+	/*the twa next properties are for other browser support */
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+}
+
+#colorDisplay {
+	/*200% of the parent element which is h1*/
+	font-size: 200%;
+}
+
+#message {
+	/*inline block will make it not empty even if there is no text*/
+	display: inline-block;
+	/*20 % of the parent which is div id = "stripe"*/
+	width: 20%;
+}
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	/*100% of the div id = "stripe"*/
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	/*it's the same as to say 100% of the parent which is span id ="stripe"*/
+	font-size: inherit;
+	/*transition all means every changing aspect in the button which means the color and background*/
+	transition: all 0.3s;
+	/*the twa next properties are for other browser support*/
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	/*when the button is selected it wil have like a border and we want to remove that*/
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+}

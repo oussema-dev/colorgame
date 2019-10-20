@@ -1,0 +1,16 @@
+{
+	"name": "color-game",
+	"version": "1.0.0",
+	"description": "A simple javascript color guessing game",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node app.js"
+	},
+	"author": "oussema",
+	"license": "ISC",
+	"dependencies": {
+		"ejs": "^2.7.1",
+		"express": "^4.17.1"
+	}
+}
